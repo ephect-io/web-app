@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/forms.git",
-                "reference": "58e66b3f9f1cd6c224687196e4a1f0f76b5a4229"
+                "reference": "dc08bc565488330a6060c3913be59cf00e937854"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/forms/zipball/58e66b3f9f1cd6c224687196e4a1f0f76b5a4229",
-                "reference": "58e66b3f9f1cd6c224687196e4a1f0f76b5a4229",
+                "url": "https://api.github.com/repos/ephect-io/forms/zipball/dc08bc565488330a6060c3913be59cf00e937854",
+                "reference": "dc08bc565488330a6060c3913be59cf00e937854",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "issues": "https://github.com/ephect-io/forms/issues",
                 "source": "https://github.com/ephect-io/forms/tree/develop"
             },
-            "time": "2024-08-21T15:49:12+00:00"
+            "time": "2024-08-21T16:30:09+00:00"
         },
         {
             "name": "ephect-io/framework",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "7bef1bf023dc7db0c0c4535f956b552284fa53ba"
+                "reference": "d677c73c7f2c4358af95b1ee44e208c5c7bae23c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/7bef1bf023dc7db0c0c4535f956b552284fa53ba",
-                "reference": "7bef1bf023dc7db0c0c4535f956b552284fa53ba",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/d677c73c7f2c4358af95b1ee44e208c5c7bae23c",
+                "reference": "d677c73c7f2c4358af95b1ee44e208c5c7bae23c",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +98,7 @@
                 "issues": "https://github.com/ephect-io/framework/issues",
                 "source": "https://github.com/ephect-io/framework/tree/remove_components"
             },
-            "time": "2024-08-21T12:41:42+00:00"
+            "time": "2024-08-21T16:24:52+00:00"
         },
         {
             "name": "ephect-io/router",
@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/router.git",
-                "reference": "82aec64a7087a4200ff0d1cef347c391bf76ca22"
+                "reference": "57bcb0e84a319a1b67d97a624e75036f095b3232"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/router/zipball/82aec64a7087a4200ff0d1cef347c391bf76ca22",
-                "reference": "82aec64a7087a4200ff0d1cef347c391bf76ca22",
+                "url": "https://api.github.com/repos/ephect-io/router/zipball/57bcb0e84a319a1b67d97a624e75036f095b3232",
+                "reference": "57bcb0e84a319a1b67d97a624e75036f095b3232",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                 "issues": "https://github.com/ephect-io/router/issues",
                 "source": "https://github.com/ephect-io/router/tree/develop"
             },
-            "time": "2024-08-21T12:56:13+00:00"
+            "time": "2024-08-21T16:32:11+00:00"
         }
     ],
     "packages-dev": [],
