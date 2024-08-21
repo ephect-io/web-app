@@ -4,9 +4,9 @@ namespace Ephect\WebApp\Builder\Strategy;
 
 use DateTime;
 use Ephect\Forms\Components\Component;
+use Ephect\Forms\Registry\PluginRegistry;
 use Ephect\Framework\CLI\Console;
 use Ephect\Framework\CLI\ConsoleColors;
-use Ephect\Framework\Registry\PluginRegistry;
 use Ephect\Framework\Utils\File;
 use Ephect\Modules\Routing\RouterService;
 use Throwable;

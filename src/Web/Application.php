@@ -3,23 +3,18 @@
 namespace Ephect\WebApp\Web;
 
 use Ephect\Forms\Components\Component;
+use Ephect\Forms\Registry\CacheRegistry;
+use Ephect\Forms\Registry\ComponentRegistry;
+use Ephect\Forms\Registry\PluginRegistry;
 use Ephect\Framework\CLI\Console;
 use Ephect\Framework\Core\AbstractApplication;
-use Ephect\Framework\Registry\CacheRegistry;
-use Ephect\Framework\Registry\ComponentRegistry;
 use Ephect\Framework\Registry\HooksRegistry;
-use Ephect\Framework\Registry\PluginRegistry;
 use Ephect\Framework\Registry\StateRegistry;
-use Ephect\WebApp\Builder;
+use Ephect\WebApp\Builder\Builder;
 
 class Application extends AbstractApplication
 {
     private string $html = '';
-
-    public function getHtml(): string
-    {
-        return $this->html;
-    }
 
     public static function create(...$params): self
     {
@@ -60,6 +55,11 @@ class Application extends AbstractApplication
         // $compiler->buildWebcomponents($motherUID);
 
         return 0;
+    }
+
+    public function getHtml(): string
+    {
+        return $this->html;
     }
 
     public function displayConstants(): array
@@ -111,7 +111,6 @@ class Application extends AbstractApplication
 
         return $constants;
     }
-
 
 
 }

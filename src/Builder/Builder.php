@@ -2,11 +2,12 @@
 
 namespace Ephect\WebApp\Builder;
 
+use Ephect\Forms\Registry\CodeRegistry;
+use Ephect\Forms\Registry\ComponentRegistry;
+use Ephect\Forms\Registry\PluginRegistry;
 use Ephect\Framework\Modules\ModuleInstaller;
-use Ephect\Framework\Registry\CodeRegistry;
-use Ephect\Framework\Registry\ComponentRegistry;
-use Ephect\Framework\Registry\PluginRegistry;
 use Ephect\Framework\Utils\File;
+use Ephect\Modules\Routing\RouterService;
 use Ephect\WebApp\Builder\Copiers\TemplatesCopyMaker;
 use Ephect\WebApp\Builder\Descriptors\ComponentListDescriptor;
 use Ephect\WebApp\Builder\Descriptors\ModuleListDescriptor;
@@ -14,7 +15,7 @@ use Ephect\WebApp\Builder\Descriptors\PluginListDescriptor;
 use Ephect\WebApp\Builder\Routing\Finder;
 use Ephect\WebApp\Builder\Strategy\BuildByNameStrategy;
 use Ephect\WebApp\Builder\Strategy\BuildByRouteStrategy;
-use Ephect\Modules\Routing\RouterService;
+use Exception;
 
 class Builder
 {
@@ -49,7 +50,7 @@ class Builder
             $components = $descriptor->describe();
             $this->list = [...$this->list, ...$components];
 
-            [$filename, $modulePaths]  = ModuleInstaller::readModulePaths();
+            [$filename, $modulePaths] = ModuleInstaller::readModulePaths();
             foreach ($modulePaths as $path) {
                 $moduleConfigDir = $path . DIRECTORY_SEPARATOR . REL_CONFIG_DIR;
                 $moduleSrcPathFile = $moduleConfigDir . REL_CONFIG_APP;
@@ -73,7 +74,7 @@ class Builder
 
             PluginRegistry::save();
             ComponentRegistry::save();
-       }
+        }
     }
 
     public function prepareRoutedComponents(): void
@@ -81,7 +82,7 @@ class Builder
         CodeRegistry::load();
         ComponentRegistry::load();
 
-        $routes =  (new Finder)->searchForRoutes();
+        $routes = (new Finder)->searchForRoutes();
 
         array_unshift($routes, 'App');
 
@@ -96,7 +97,7 @@ class Builder
     }
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function buildAllRoutes(): void
     {

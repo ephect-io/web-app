@@ -66,8 +66,7 @@ LOGO;
 
 LOGO;
 
-        
-        
+
         echo $logo3 . PHP_EOL;
 
 

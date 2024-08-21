@@ -3,7 +3,7 @@
 namespace Ephect\WebApp\Builder\Descriptors;
 
 use Ephect\Forms\Components\Plugin;
-use Ephect\Framework\Registry\PluginRegistry;
+use Ephect\Forms\Registry\PluginRegistry;
 use Ephect\Framework\Utils\File;
 
 class PluginDescriptor implements DescriptorInterface

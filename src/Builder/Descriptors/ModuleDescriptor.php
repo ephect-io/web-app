@@ -5,10 +5,11 @@ namespace Ephect\WebApp\Builder\Descriptors;
 use Ephect\Forms\Components\ComponentEntity;
 use Ephect\Forms\Components\ComponentInterface;
 use Ephect\Forms\Components\Generators\ComponentParser;
+use Ephect\Forms\Registry\CodeRegistry;
+use Ephect\Forms\Registry\ComponentRegistry;
 use Ephect\Framework\Modules\ModuleManifestReader;
-use Ephect\Framework\Registry\CodeRegistry;
-use Ephect\Framework\Registry\ComponentRegistry;
 use Ephect\Framework\Utils\File;
+use Exception;
 
 class ModuleDescriptor implements DescriptorInterface
 {
@@ -27,12 +28,12 @@ class ModuleDescriptor implements DescriptorInterface
 
         $moduleEntrypoint = $manifest->getEntrypoint();
 
-        if($moduleEntrypoint == null) {
+        if ($moduleEntrypoint == null) {
             return [null, null];
         }
 
-        if(!in_array(ComponentInterface::class, class_implements($moduleEntrypoint))) {
-            throw new \Exception("Module entry point must implement " . ComponentInterface::class . " or be null.");
+        if (!in_array(ComponentInterface::class, class_implements($moduleEntrypoint))) {
+            throw new Exception("Module entry point must implement " . ComponentInterface::class . " or be null.");
         }
 
         return $this->parseComponent($moduleEntrypoint, $filename);

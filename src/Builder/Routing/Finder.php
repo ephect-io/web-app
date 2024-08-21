@@ -5,8 +5,8 @@ namespace Ephect\WebApp\Builder\Routing;
 use Ephect\Forms\Components\ComponentDeclaration;
 use Ephect\Forms\Components\ComponentDeclarationStructure;
 use Ephect\Forms\Components\ComponentEntity;
-use Ephect\Framework\Registry\CodeRegistry;
-use Ephect\Framework\Registry\ComponentRegistry;
+use Ephect\Forms\Registry\CodeRegistry;
+use Ephect\Forms\Registry\ComponentRegistry;
 use Ephect\Modules\Routing\RouteBuilder;
 
 class Finder

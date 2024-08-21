@@ -20,7 +20,7 @@ class ModuleListDescriptor implements ComponentListDescriptorInterface
         $moduleTemplateList = File::walkTreeFiltered($templateDir, ['phtml']);
         foreach ($moduleTemplateList as $key => $moduleTemplate) {
             [$fqcn, $comp] = $descriptor->describe($templateDir, $moduleTemplate);
-            if(is_string($fqcn) && $comp instanceof ComponentInterface) {
+            if (is_string($fqcn) && $comp instanceof ComponentInterface) {
                 $result[$fqcn] = $comp;
             }
         }
