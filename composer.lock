@@ -1,0 +1,119 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e3fa9cb1ef703c4809a63ed5de78e6ba",
+    "packages": [
+        {
+            "name": "ephect-io/framework",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/framework.git",
+                "reference": "621405ba6db5d55d31a85c8a8001bb924f2f5102"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/621405ba6db5d55d31a85c8a8001bb924f2f5102",
+                "reference": "621405ba6db5d55d31a85c8a8001bb924f2f5102",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-iconv": "*",
+                "ext-mysqlnd": "*",
+                "ext-pdo": "*",
+                "ext-readline": "*",
+                "ext-sqlite3": "*",
+                "ext-zip": "*",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ephect\\": "Ephect/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "homepage": "https://ephect.io",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Effective PHP",
+            "homepage": "https://ephect.io",
+            "support": {
+                "issues": "https://github.com/ephect-io/framework/issues",
+                "source": "https://github.com/ephect-io/framework/tree/develop"
+            },
+            "time": "2024-08-20T09:11:32+00:00"
+        },
+        {
+            "name": "ephect-io/toolbox",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/toolbox.git",
+                "reference": "0c5c261179f242450ab509221d94803f7ab5c155"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/toolbox/zipball/0c5c261179f242450ab509221d94803f7ab5c155",
+                "reference": "0c5c261179f242450ab509221d94803f7ab5c155",
+                "shasum": ""
+            },
+            "require": {
+                "ephect-io/framework": "dev-develop"
+            },
+            "bin": [
+                "bin/ephect-io_toolbox_install.sh",
+                "bin/ephect-io_toolbox_install.bat"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ephect\\Toolbox\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "homepage": "https://ephect.io",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A bunch of scripts to help developing with Ephect framework",
+            "homepage": "https://ephect.io",
+            "support": {
+                "issues": "https://github.com/ephect-io/toolbox/issues",
+                "source": "https://github.com/ephect-io/toolbox/tree/develop"
+            },
+            "time": "2024-08-20T22:23:36+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "ephect-io/framework": 20,
+        "ephect-io/toolbox": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
