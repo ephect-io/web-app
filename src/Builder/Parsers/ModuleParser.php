@@ -5,7 +5,7 @@ namespace Ephect\WebApp\Builder\Parsers;
 use Ephect\Forms\Components\ComponentEntity;
 use Ephect\Forms\Components\Generators\ComponentParser;
 use Ephect\Forms\Registry\CodeRegistry;
-use Ephect\Forms\Registry\PluginRegistry;
+use Ephect\Forms\Registry\ComponentRegistry;
 
 class ModuleParser implements ParserTypeInterface
 {
@@ -25,8 +25,8 @@ class ModuleParser implements ParserTypeInterface
         $decl = $struct->toArray();
 
         CodeRegistry::write($comp->getFullyQualifiedFunction(), $decl);
-        PluginRegistry::write($this->filename, $uid);
-        PluginRegistry::write($comp->getUID(), $comp->getFullyQualifiedFunction());
+        ComponentRegistry::write($this->filename, $uid);
+        ComponentRegistry::write($comp->getUID(), $comp->getFullyQualifiedFunction());
 
         $entity = ComponentEntity::buildFromArray($struct->composition);
         $comp->add($entity);
