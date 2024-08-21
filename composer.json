@@ -4,11 +4,6 @@
     "homepage": "https://example.com",
     "license": "GPL-3.0+",
     "version": "0.7.2",
-    "autoload": {
-        "psr-4": {
-            "Ephect\\WebApp\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "John Doe",
