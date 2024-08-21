@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/router.git",
-                "reference": "f0be6971438d60131d8064aba107d9ca7efdc57a"
+                "reference": "6555964580284e07a36e2f45703f9f6db3710942"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/router/zipball/f0be6971438d60131d8064aba107d9ca7efdc57a",
-                "reference": "f0be6971438d60131d8064aba107d9ca7efdc57a",
+                "url": "https://api.github.com/repos/ephect-io/router/zipball/6555964580284e07a36e2f45703f9f6db3710942",
+                "reference": "6555964580284e07a36e2f45703f9f6db3710942",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +128,7 @@
                 "issues": "https://github.com/ephect-io/router/issues",
                 "source": "https://github.com/ephect-io/router/tree/develop"
             },
-            "time": "2024-08-21T19:36:55+00:00"
+            "time": "2024-08-21T19:44:59+00:00"
         }
     ],
     "packages-dev": [],
