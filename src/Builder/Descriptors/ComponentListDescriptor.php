@@ -2,7 +2,7 @@
 
 namespace Ephect\WebApp\Builder\Descriptors;
 
-use Ephect\Forms\Registry\PluginRegistry;
+use Ephect\Framework\Modules\ModuleInstaller;
 use Ephect\Framework\Utils\File;
 
 class ComponentListDescriptor implements ComponentListDescriptorInterface
@@ -31,7 +31,7 @@ class ComponentListDescriptor implements ComponentListDescriptorInterface
             $result[$fqcn] = $comp;
         }
 
-        [$filename, $modulePaths] = PluginRegistry::readPluginPaths();
+        [$filename, $modulePaths] = ModuleInstaller::readModulePaths();
         foreach ($modulePaths as $path) {
             $moduleConfigDir = $path . DIRECTORY_SEPARATOR . REL_CONFIG_DIR;
             $moduleTemplatesFile = $moduleConfigDir . 'templates';
