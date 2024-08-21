@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "102e2bdeb962707e64ac0aae1d30d080",
+    "content-hash": "bda438969eac60f8ab3ccb867c98c21a",
     "packages": [
         {
             "name": "ephect-io/forms",
@@ -12,16 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/forms.git",
-                "reference": "0c4b65d31afc64cbb640f58c0c8b57320ff41a48"
+                "reference": "e0d6a6865af55ac721ef4a2885f3d59e452ad019"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/forms/zipball/0c4b65d31afc64cbb640f58c0c8b57320ff41a48",
-                "reference": "0c4b65d31afc64cbb640f58c0c8b57320ff41a48",
+                "url": "https://api.github.com/repos/ephect-io/forms/zipball/e0d6a6865af55ac721ef4a2885f3d59e452ad019",
+                "reference": "e0d6a6865af55ac721ef4a2885f3d59e452ad019",
                 "shasum": ""
             },
             "require": {
-                "ephect-io/framework": "dev-remove_components"
+                "ephect-io/framework": "dev-develop"
             },
             "bin": [
                 "bin/ephect-io_forms_install.sh",
@@ -43,11 +43,11 @@
                 "issues": "https://github.com/ephect-io/forms/issues",
                 "source": "https://github.com/ephect-io/forms/tree/develop"
             },
-            "time": "2024-08-21T19:34:45+00:00"
+            "time": "2024-08-21T20:31:46+00:00"
         },
         {
             "name": "ephect-io/framework",
-            "version": "dev-remove_components",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
@@ -86,7 +86,7 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/remove_components"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
             "time": "2024-08-21T19:32:21+00:00"
         },
@@ -96,17 +96,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/router.git",
-                "reference": "6555964580284e07a36e2f45703f9f6db3710942"
+                "reference": "f5f8300fc67112d4a82ac42dd7050d2764d464f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/router/zipball/6555964580284e07a36e2f45703f9f6db3710942",
-                "reference": "6555964580284e07a36e2f45703f9f6db3710942",
+                "url": "https://api.github.com/repos/ephect-io/router/zipball/f5f8300fc67112d4a82ac42dd7050d2764d464f5",
+                "reference": "f5f8300fc67112d4a82ac42dd7050d2764d464f5",
                 "shasum": ""
             },
             "require": {
                 "ephect-io/forms": "dev-develop",
-                "ephect-io/framework": "dev-remove_components"
+                "ephect-io/framework": "dev-develop"
             },
             "bin": [
                 "bin/ephect-io_router_install.sh",
@@ -128,7 +128,7 @@
                 "issues": "https://github.com/ephect-io/router/issues",
                 "source": "https://github.com/ephect-io/router/tree/develop"
             },
-            "time": "2024-08-21T19:44:59+00:00"
+            "time": "2024-08-21T20:32:16+00:00"
         }
     ],
     "packages-dev": [],
