@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/forms.git",
-                "reference": "dc08bc565488330a6060c3913be59cf00e937854"
+                "reference": "615f38690da48c5fe3c5c0d6b0adba25180ebf2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/forms/zipball/dc08bc565488330a6060c3913be59cf00e937854",
-                "reference": "dc08bc565488330a6060c3913be59cf00e937854",
+                "url": "https://api.github.com/repos/ephect-io/forms/zipball/615f38690da48c5fe3c5c0d6b0adba25180ebf2e",
+                "reference": "615f38690da48c5fe3c5c0d6b0adba25180ebf2e",
                 "shasum": ""
             },
             "require": {
@@ -28,11 +28,6 @@
                 "bin/ephect-io_forms_install.bat"
             ],
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ephect\\Forms\\": "src/"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
@@ -48,7 +43,7 @@
                 "issues": "https://github.com/ephect-io/forms/issues",
                 "source": "https://github.com/ephect-io/forms/tree/develop"
             },
-            "time": "2024-08-21T16:30:09+00:00"
+            "time": "2024-08-21T17:31:37+00:00"
         },
         {
             "name": "ephect-io/framework",
@@ -106,12 +101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/router.git",
-                "reference": "d208815cc3836c2d9881dbbcfe62b4e4d59bd613"
+                "reference": "c8db1c83afd362676f303270ce09223b7284a5f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/router/zipball/d208815cc3836c2d9881dbbcfe62b4e4d59bd613",
-                "reference": "d208815cc3836c2d9881dbbcfe62b4e4d59bd613",
+                "url": "https://api.github.com/repos/ephect-io/router/zipball/c8db1c83afd362676f303270ce09223b7284a5f6",
+                "reference": "c8db1c83afd362676f303270ce09223b7284a5f6",
                 "shasum": ""
             },
             "require": {
@@ -123,11 +118,6 @@
                 "bin/ephect-io_router_install.bat"
             ],
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ephect\\Modules\\Router\\": "src/"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
@@ -143,7 +133,7 @@
                 "issues": "https://github.com/ephect-io/router/issues",
                 "source": "https://github.com/ephect-io/router/tree/develop"
             },
-            "time": "2024-08-21T16:55:12+00:00"
+            "time": "2024-08-21T17:36:21+00:00"
         }
     ],
     "packages-dev": [],
