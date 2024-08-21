@@ -5,7 +5,6 @@ namespace Ephect\WebApp\Builder\Parsers;
 use Ephect\Forms\Components\ComponentEntity;
 use Ephect\Forms\Components\Generators\ComponentParser;
 use Ephect\Forms\Registry\CodeRegistry;
-use Ephect\Forms\Registry\ComponentRegistry;
 use Ephect\Forms\Registry\PluginRegistry;
 
 class ModuleParser implements ParserTypeInterface
