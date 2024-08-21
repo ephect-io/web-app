@@ -4,20 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3fa9cb1ef703c4809a63ed5de78e6ba",
+    "content-hash": "102e2bdeb962707e64ac0aae1d30d080",
     "packages": [
         {
-            "name": "ephect-io/framework",
+            "name": "ephect-io/forms",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ephect-io/framework.git",
-                "reference": "621405ba6db5d55d31a85c8a8001bb924f2f5102"
+                "url": "https://github.com/ephect-io/forms.git",
+                "reference": "f34de27e2c689222ec3a1ee8155eb845c7039bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/621405ba6db5d55d31a85c8a8001bb924f2f5102",
-                "reference": "621405ba6db5d55d31a85c8a8001bb924f2f5102",
+                "url": "https://api.github.com/repos/ephect-io/forms/zipball/f34de27e2c689222ec3a1ee8155eb845c7039bb0",
+                "reference": "f34de27e2c689222ec3a1ee8155eb845c7039bb0",
+                "shasum": ""
+            },
+            "require": {
+                "ephect-io/framework": "dev-remove_components"
+            },
+            "bin": [
+                "bin/ephect-io_forms_install.sh",
+                "bin/ephect-io_forms_install.bat"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ephect\\Forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Doe",
+                    "email": "john.doe@example.com"
+                }
+            ],
+            "homepage": "https://example.com",
+            "support": {
+                "issues": "https://github.com/ephect-io/forms/issues",
+                "source": "https://github.com/ephect-io/forms/tree/develop"
+            },
+            "time": "2024-08-21T12:52:30+00:00"
+        },
+        {
+            "name": "ephect-io/framework",
+            "version": "dev-remove_components",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/framework.git",
+                "reference": "7bef1bf023dc7db0c0c4535f956b552284fa53ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/7bef1bf023dc7db0c0c4535f956b552284fa53ba",
+                "reference": "7bef1bf023dc7db0c0c4535f956b552284fa53ba",
                 "shasum": ""
             },
             "require": {
@@ -52,35 +96,36 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/develop"
+                "source": "https://github.com/ephect-io/framework/tree/remove_components"
             },
-            "time": "2024-08-20T09:11:32+00:00"
+            "time": "2024-08-21T12:41:42+00:00"
         },
         {
-            "name": "ephect-io/toolbox",
+            "name": "ephect-io/router",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ephect-io/toolbox.git",
-                "reference": "0c5c261179f242450ab509221d94803f7ab5c155"
+                "url": "https://github.com/ephect-io/router.git",
+                "reference": "82aec64a7087a4200ff0d1cef347c391bf76ca22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/toolbox/zipball/0c5c261179f242450ab509221d94803f7ab5c155",
-                "reference": "0c5c261179f242450ab509221d94803f7ab5c155",
+                "url": "https://api.github.com/repos/ephect-io/router/zipball/82aec64a7087a4200ff0d1cef347c391bf76ca22",
+                "reference": "82aec64a7087a4200ff0d1cef347c391bf76ca22",
                 "shasum": ""
             },
             "require": {
-                "ephect-io/framework": "dev-develop"
+                "ephect-io/forms": "dev-develop",
+                "ephect-io/framework": "dev-remove_components"
             },
             "bin": [
-                "bin/ephect-io_toolbox_install.sh",
-                "bin/ephect-io_toolbox_install.bat"
+                "bin/ephect-io_router_install.sh",
+                "bin/ephect-io_router_install.bat"
             ],
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ephect\\Toolbox\\": "app/"
+                    "Ephect\\Modules\\Router\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -89,19 +134,16 @@
             ],
             "authors": [
                 {
-                    "name": "David Blanchard",
-                    "email": "dpjb@hotmail.fr",
-                    "homepage": "https://ephect.io",
-                    "role": "Creator"
+                    "name": "John Doe",
+                    "email": "john.doe@example.com"
                 }
             ],
-            "description": "A bunch of scripts to help developing with Ephect framework",
-            "homepage": "https://ephect.io",
+            "homepage": "https://example.com",
             "support": {
-                "issues": "https://github.com/ephect-io/toolbox/issues",
-                "source": "https://github.com/ephect-io/toolbox/tree/develop"
+                "issues": "https://github.com/ephect-io/router/issues",
+                "source": "https://github.com/ephect-io/router/tree/develop"
             },
-            "time": "2024-08-20T22:23:36+00:00"
+            "time": "2024-08-21T12:56:13+00:00"
         }
     ],
     "packages-dev": [],
@@ -109,7 +151,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "ephect-io/framework": 20,
-        "ephect-io/toolbox": 20
+        "ephect-io/forms": 20,
+        "ephect-io/router": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

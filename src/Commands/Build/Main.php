@@ -1,6 +1,6 @@
 <?php
 
-namespace Ephect\WebApp\Builder\Commands\Build;
+namespace Ephect\WebApp\Commands\Build;
 
 use Ephect\Framework\Commands\AbstractCommand;
 use Ephect\Framework\Commands\Attributes\CommandDeclaration;

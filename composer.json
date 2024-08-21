@@ -18,7 +18,8 @@
     "minimum-stability": "stable",
     "require": {
         "ephect-io/framework": "dev-remove_components",
-        "ephect-io/app-builder": "dev-develop"
+        "ephect-io/forms": "dev-develop",
+        "ephect-io/router": "dev-develop"
     },
     "bin": [
         "bin/ephect-io_web-app_install.sh",
