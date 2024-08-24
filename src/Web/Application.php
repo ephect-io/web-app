@@ -51,9 +51,6 @@ class Application extends AbstractApplication
         $app->render();
 //        $this->html = ob_get_clean();
 
-        // $motherUID = $app->getMotherUID();
-        // $compiler->buildWebcomponents($motherUID);
-
         return 0;
     }
 
